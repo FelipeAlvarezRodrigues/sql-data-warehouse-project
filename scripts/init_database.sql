@@ -6,9 +6,9 @@ Script Purpose:
 	This script creates a new database named 'DataWarehouse' after checking if it already exists.
 	If the database exists, it will be dropped and recreated. Additionally, the script sets up three schemas whithin the database:
 
-	10-bronze
-	20-silver
-	30-gold
+	bronze
+	silver
+	gold
 
 WARNING!!!
 	Running this script will drop the entire "DataWarehouse" database if it exists.
@@ -39,8 +39,8 @@ USE DataWarehouse;
 GO
 
 -- Create Schemas
-CREATE SCHEMA "10-bronze";
+CREATE SCHEMA bronze;
 GO
-CREATE SCHEMA "20-silver";
+CREATE SCHEMA silver;
 GO
-CREATE SCHEMA "30-gold";
+CREATE SCHEMA gold;
