@@ -1,8 +1,21 @@
-# Second volume mounts project data separately to avoid conflict with SQL data volume.
-# Make sure your project data is stored on the host at /var/opt/mssql/dwh_project for proper mounting.
-# to enable BULK INSERT access from SQL Server container.
-# Environment variables like SA_PASSWORD are stored in a separate .env file for security and easier management.
-# Save the .env file outside version control to keep sensitive data safe.
+# -----------------------------------------------------------
+# Project Configuration Notes:
+#
+# - Second volume mounts project data separately to avoid conflict with SQL data volume.
+#   Make sure your project data is stored on the host at /var/opt/mssql/dwh_project
+#   for proper mounting and to enable BULK INSERT access from the SQL Server container.
+#
+# - Environment variables like SA_PASSWORD are stored in a separate .env file
+#   for better security and easier configuration management.
+#
+# - Place the .env file in the root directory of your project (same level as docker-compose.yml).
+#   Example:
+#     /your-project/
+#     ├── docker-compose.yml
+#     └── .env
+#
+# - If you're using Git, add `.env` to your `.gitignore` file to avoid committing sensitive data.
+# -----------------------------------------------------------
 
 services:
   sqlserver:
