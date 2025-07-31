@@ -3,6 +3,7 @@
 ## 🧠 Overview
 
 This project implements a Data Warehouse using **SQL Server**, following the **Medallion Architecture** (🏅 Bronze, 🥈 Silver, 🥇 Gold layers). It supports structured, scalable, and clean data modeling, enabling powerful reporting and analytics.
+The entire solution runs inside a Docker 🐳 container for easy deployment and consistent environments across different systems.
 
 ## 🏗️ Architecture
 
@@ -37,6 +38,13 @@ Develop SQL-based analytics to deliver detailed insights into:
 - 💰 **Sales Trends**
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+
+---
+
+🏠 Deployment & Environment
+
+This project is hosted on a personal Ubuntu Server 🖥️ running SQL Server inside a Docker 🐳 container, orchestrated with Docker Compose 📦.
+This setup streamlines deployment, improves environment consistency, and enhances scalability and portability.
 
 ---
 
