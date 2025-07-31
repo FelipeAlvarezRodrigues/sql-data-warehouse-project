@@ -1,12 +1,17 @@
 /*
-===============================================================================
+=======================================================================================
 DDL Script: Create Bronze Tables
-===============================================================================
+=======================================================================================
 Script Purpose:
     This script creates tables in the 'bronze' schema, dropping existing tables 
     if they already exist.
 	  Run this script to re-define the DDL structure of 'bronze' Tables
-===============================================================================
+=======================================================================================
+IMPORTANT:
+
+-- When using BULK INSERT with a DATE column, empty fields may default to '1900-01-01'.
+-- Switching to DATETIME allows empty fields to be correctly interpreted as NULL.
+========================================================================================
 */
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
