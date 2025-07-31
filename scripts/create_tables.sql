@@ -32,9 +32,9 @@ CREATE TABLE bronze.crm_sales_details (
 	sls_ord_num NVARCHAR(50),
 	sls_prd_key NVARCHAR(50),
 	sls_cust_id int,
-	sls_order_dt DATE,
-	sls_ship_dt DATE,
-	sls_due_dt DATE,
+	sls_order_dt NVARCHAR(50),
+	sls_ship_dt NVARCHAR(50),
+	sls_due_dt NVARCHAR(50),
 	sls_sales int,
 	sls_quantity int,
 	sls_price DECIMAL (10,2)
